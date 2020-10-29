@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Random Dog App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="Solution1">
+        <div>
+            <form class="form1">
+                <label for="displayCount">How many dog pictures would you like to display?*</label>
+                <input type="text" name="displayCount" id="displayCount" value="3" required>
+                <input type="submit" value="Gimme some dogs!">
+            </form>
+        </div>
+        <div class="dogPark"></div>
+    </div>
+    <div class="Solution2">
+        <div>
+            <form class="form2">
+                <label for="breedChoice">What dog breed would you like for your random picture?</label>
+                <input type="text" name="breedChoice" id="breedChoice" required>
+                <input type="submit" value="Gimme that dog breed!">
+            </form>
+        </div>
+        <div class="dogBreedPark"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
