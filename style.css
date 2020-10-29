@@ -27,8 +27,13 @@ img {
 @media all and (min-width: 600px) {
     body {
         flex-direction: row;
+        align-items: flex-start;
     }
     .solution1, .solution2 {
         max-width: 50%;
     }
+}
+
+.hidden {
+    display: none;
 }

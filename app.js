@@ -10,6 +10,7 @@ function getDogs() {
 
 function handleBreedError(responseJSON) {
     if (responseJSON.status ==="error") {
+        console.log(responseJSON)
         alert(responseJSON.message)
     } else {
         displayDogBreed(responseJSON)
@@ -43,12 +44,14 @@ function displayDogs(responseJson) {
   console.log(responseJson);
   //replace the existing image with the new one
   $('.dogPark').html(generateDogs(responseJson));
+  $('.dogPark').removeClass('hidden');
 }
 
 function displayDogBreed(responseJson) {
     console.log(responseJson);
     //replace the existing image with the new one
     $('.dogBreedPark').html(dogBreedElement(responseJson.message));
+    $('.dogBreedPark').removeClass('hidden');
   }
 
 function handleCountSubmit() {
